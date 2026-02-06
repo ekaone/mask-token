@@ -143,13 +143,13 @@ maskToken(token, { includeMetadata: true })
 
 ### 🎓 Examples
 
-- Basic masking examples
-- Preset usage examples
-- Custom configuration examples
-- Validation examples
-- Batch processing examples
-- JWT masking examples
-- React component examples
+- Basic masking examples (Planned)
+- Preset usage examples (Planned)
+- Custom configuration examples (Planned)
+- Validation examples (Planned)
+- Batch processing examples (Planned)
+- JWT masking examples (Planned)
+- React component examples (Planned)
 
 ---
 
@@ -214,8 +214,8 @@ Migration guides for future breaking changes will be documented here.
 
 ### v1.0.0 Contributors
 
-- **Author**: [Your Name]
-- **Contributors**: [List contributors here]
+- **Author**: Eka Prasetia
+- **Contributors**: None
 
 ### How to Contribute
 
@@ -225,14 +225,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution guidelines.
 
 ## Links
 
-- [NPM Package](https://www.npmjs.com/package/mask-token)
-- [GitHub Repository](https://github.com/yourusername/mask-token)
-- [Documentation](https://github.com/yourusername/mask-token#readme)
-- [Issue Tracker](https://github.com/yourusername/mask-token/issues)
-
----
-
-**Note**: All changes are documented in reverse chronological order (newest first).
-
-[Unreleased]: https://github.com/yourusername/mask-token/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/yourusername/mask-token/releases/tag/v1.0.0
+- [NPM Package](https://www.npmjs.com/package/@ekaone/mask-token)
+- [GitHub Repository](https://github.com/ekaone/mask-token)
+- [Documentation](https://github.com/ekaone/mask-token#readme)
+- [Issue Tracker](https://github.com/ekaone/mask-token/issues)

@@ -15,16 +15,16 @@ describe("maskToken", () => {
   });
 
   it("supports strict preset", () => {
-    const input = "sk_test_1234567890abcdefghijklmn";
+    const input = "sk_test_XXXXXXXXXXXXXXXXXXXX";
     expect(maskToken(input, { preset: "strict" })).toBe(
-      "sk_test_••••••••••••klmn",
+      "sk_test_••••••••••••XXXX",
     );
   });
 
   it("supports balanced preset", () => {
-    const input = "sk_test_1234567890abcdefghijklmn";
+    const input = "sk_test_XXXXXXXXXXXXXXXXXXXX";
     expect(maskToken(input, { preset: "balanced" })).toBe(
-      "sk_test_12••••••••klmn",
+      "sk_test_XX••••••••XXXX",
     );
   });
 

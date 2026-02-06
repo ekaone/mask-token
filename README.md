@@ -48,8 +48,8 @@ maskToken('ghp_abcdefghijklmnopqrstuvwxyz123456');
 // → 'ghp_••••••••3456'
 
 // Stripe keys
-maskToken('sk_test_1234567890abcdefghijklmn');
-// → 'sk_test_••••••••klmn'
+maskToken('sk_test_XXXXXXXXXXXXXXXXXXXX');
+// → 'sk_test_••••••••XXXX'
 
 // AWS keys
 maskToken('AKIAIOSFODNN7EXAMPLE');
@@ -65,23 +65,23 @@ Choose from 4 optimized presets for different use cases:
 ```typescript
 import { presets } from '@ekaone/mask-token';
 
-const token = 'sk_test_1234567890abcdefghijklmn';
+const token = 'sk_test_XXXXXXXXXXXXXXXXXXXX';
 
 // Strict - Maximum security (production logs, compliance)
 presets.strict(token);
-// → 'sk_test_••••••••••••klmn'
+// → 'sk_test_••••••••••••XXXX'
 
 // Balanced - Good for general use
 presets.balanced(token);
-// → 'sk_test_12••••••••klmn'
+// → 'sk_test_XX••••••••XXXX'
 
 // Lenient - More visible (development only)
 presets.lenient(token);
-// → 'sk_test_1234******ijklmn'
+// → 'sk_test_XXXX******XXXXXX'
 
 // UI - Optimized for user interfaces
 presets.ui(token);
-// → 'sk_test_1234••••••••klmn'
+// → 'sk_test_XXXX••••••••XXXX'
 ```
 
 ### Custom Configuration
@@ -442,7 +442,7 @@ function ApiKeyDisplay({ apiKey }) {
 ```typescript
 import { maskToken } from '@ekaone/mask-token';
 
-const example = maskToken('sk_test_1234567890abcdefghijklmn');
+const example = maskToken('sk_test_XXXXXXXXXXXXXXXXXXXX');
 // Use in documentation without exposing real keys
 ```
 

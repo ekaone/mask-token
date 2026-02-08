@@ -554,7 +554,7 @@ To add support for a new token type, edit [`src/presets/registry.ts`](./src/pres
 
 ## 📝 License
 
-MIT © 2024
+MIT © 2026
 
 ## 🙏 Acknowledgments
 

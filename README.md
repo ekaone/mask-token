@@ -156,18 +156,11 @@ console.log(result);
 //   metadata: {
 //     type: 'NPM Token',
 //     prefix: 'npm_',
-//     confidence: 1.0,
-//     isLikelyToken: true
+//     confidence: 0.6,
+//     isLikelyToken: false
 //   },
-//   validation: {
-//     valid: true,
-//     warnings: [],
-//     riskScore: 0
-//   },
-//   original: {
-//     length: 17,
-//     hasPrefix: true
-//   }
+//   validation: { valid: true, warnings: [], riskScore: 0 },
+//   original: { length: 13, hasPrefix: true }
 // }
 ```
 

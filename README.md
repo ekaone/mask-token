@@ -272,8 +272,8 @@ const metadata = detectTokenType('npm_abc123');
 // {
 //   type: 'NPM Token',
 //   prefix: 'npm_',
-//   confidence: 1.0,
-//   isLikelyToken: true
+//   confidence: 0.6,
+//   isLikelyToken: false
 // }
 ```
 
@@ -287,7 +287,14 @@ const result = validateToken('undefined', {
 });
 // {
 //   valid: false,
-//   warnings: ['Input too short', 'Looks like a placeholder'],
+//   warnings: [
+//     'Input too short (9 < 20)',
+//     'Looks like an undefined or null value'
+//   ],
+//   suggestions: [
+//     'Ensure you are passing the full token string',
+//     'Replace placeholder with actual token value'
+//   ],
 //   riskScore: 80
 // }
 ```
@@ -304,7 +311,7 @@ const myPreset = definePreset({
 });
 
 myPreset('secret123');
-// → '████████████████123'
+// → ████████████████ret123
 ```
 
 ## 🔒 Security Features
@@ -315,13 +322,13 @@ Prevents length-based enumeration attacks by using a fixed-length mask:
 
 ```typescript
 // Without fixed length (INSECURE - reveals length)
-maskToken('short', { fixedLength: false });      // → '••ort'
-maskToken('verylongtoken', { fixedLength: false }); // → '••••••••ken'
+maskToken('short', { fixedLength: false });      // → '•hort'
+maskToken('verylongtoken', { fixedLength: false }); // → '•••••••••oken'
 // ❌ Attacker knows one token is longer
 
 // With fixed length (SECURE - hides length)
-maskToken('short');           // → '••••••••ort'
-maskToken('verylongtoken');   // → '••••••••ken'
+maskToken('short');           // → '••••••••hort'
+maskToken('verylongtoken');   // → '••••••••oken'
 // ✅ Same mask length, no information leaked
 ```
 

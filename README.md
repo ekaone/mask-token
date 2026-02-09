@@ -602,3 +602,13 @@ No. Once a token is masked, the original value cannot be recovered. The masking 
 ### Does this replace proper secret management?
 
 No. This library is for **displaying** tokens safely, not for storing them. Always use proper secret management solutions (environment variables, secret managers, encrypted storage) for storing tokens.
+
+## Related Packages
+
+- [Credit card masking library](https://github.com/ekaone/mask-card)
+- [Email masking library](https://github.com/ekaone/mask-email)
+- [Phone masking library](https://github.com/ekaone/mask-phone)
+
+---
+
+⭐ If this library helps you, please consider giving it a star on GitHub!

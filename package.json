@@ -1,6 +1,6 @@
 {
   "name": "@ekaone/mask-token",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight, zero-dependency TypeScript library for masking Token",
   "keywords": [
     "token",
@@ -36,10 +36,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "pnpm clean && tsup",
     "dev": "tsup --watch",
     "clean": "rimraf dist",
-    "prepublishOnly": "npm run clean && npm run build && npm test",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run clean && pnpm run build && pnpm run test",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",

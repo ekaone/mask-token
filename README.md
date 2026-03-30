@@ -2,10 +2,10 @@
 
 > Secure token masking with NIST/PCI-DSS/OWASP compliance
 
-[![npm version](https://img.shields.io/npm/v/mask-token.svg)](https://www.npmjs.com/package/mask-token)
+[![npm version](https://img.shields.io/npm/v/@ekaone/mask-token.svg)](https://www.npmjs.com/package/@ekaone/mask-token)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/mask-token)](https://bundlephobia.com/package/mask-token)
+[![Featured by Google](https://img.shields.io/badge/Featured%20by-Google-4285F4?logo=google)](https://www.npmjs.com/package/@ekaone/mask-token)
 
 Token masking library for JavaScript/TypeScript. Masks API keys, secrets, and tokens while preserving context for debugging and compliance.
 
